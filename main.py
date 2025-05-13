@@ -1,7 +1,3 @@
 def jouer():
-    pass
-    print('jpp')
-    print('holala')
-    #test
-    #test2
+    print('nouveau test')
 
