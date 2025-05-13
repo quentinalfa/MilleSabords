@@ -2,10 +2,9 @@
 
 ## 📦 Guide rapide Git
 
-Avant tout, assure-toi d’être dans le bon dossier :
-
-```bash
-cd $workspace/MilleSabords
+Je t'ai enlevé le dossier MilleSabords donc le projet commence à la racine ;)
+``` bash
+~/workspace$ <commande>
 ```
 
 ## 📝 Ajouter et versionner tes fichiers
@@ -27,7 +26,7 @@ git commit -m "Ton message commit"
 ``` bash
 git push origin main
 ```
-Si tu travaille sur une autre branche remplace main par son nom.
+Si tu travaille sur une autre branche remplace ___main___ par son nom.
 
 ## 🔄 Récupérer les mises à jour
 
@@ -35,4 +34,4 @@ Si tu travaille sur une autre branche remplace main par son nom.
 git pull origin main
 ```
 
-De meme, adapte main si nécessaire.
+De meme, adapte ___main___ si nécessaire.
