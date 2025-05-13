@@ -34,4 +34,4 @@ Si tu travaille sur une autre branche remplace ___main___ par son nom.
 git pull origin main
 ```
 
-De meme, adapte ___main___ si nécessaire.
+De meme, adapte ___main___ si nécessaire
