@@ -1,117 +1,32 @@
-# MilleSabords
+# 🏴‍☠️ MilleSabords - Mini jeu de score en Python
 
-## 📦 Guide rapide Git
+Ce petit projet Python a pour but d'apprendre à programmer en manipulant des **listes**, des **fonctions**, des **boucles**, et un peu de **logique de jeu**. Il sert aussi de support pour s'initier à Git et aux bonnes pratiques de développement.
 
-Je t'ai enlevé le dossier MilleSabords donc le projet commence à la racine ;)
-``` bash
-~/workspace$ <commande>
-```
+---
 
-## 📝 Ajouter et versionner tes fichiers
+## 🎮 Objectif du jeu
 
-1. Ajouter un fichier :
+Chaque joueur entre son nom, puis à tour de rôle, ajoute les points qu'il gagne. Le jeu continue **jusqu'à ce qu'un joueur atteigne 6000 points**.
 
-``` bash
-git add <nom_du_fichier>
-```
+À la fin, une fonction trie les scores ainsi que les noms des joueurs, du plus petit au plus grand.
 
-2. Commit :
+---
 
-``` bash
-git commit -m "Ton message commit"
-```
+## 🧠 Concepts abordés
 
-## 🚀 Envoyer tes modifications
+- Saisie utilisateur avec `input()`
+- Boucle `while` avec conditions
+- Incrémentation de scores
+- Fonction de tri personnalisée avec `insert()` dans une liste triée
+- Manipulation de deux listes liées (`scores` et `joueurs`)
+- Introduction au typage avec `List[...]` (via `typing`)
+- Structure d'un petit programme modulaire
 
-``` bash
-git push origin main
-```
-Si tu travaille sur une autre branche remplace ___main___ par son nom.
+---
 
-## 🔄 Récupérer les mises à jour
+## 🚀 Exécution du jeu
 
-``` bash
-git pull origin main
-```
+Dans un terminal :
 
-De meme, adapte ___main___ si nécessaire
-
-## 🌱 Créer une nouvelle branche
-
-``` bash
-git branch nom_de_branche
-```
-
-## 🛠 Travailler sur ta branche
-
-``` bash
-git checkout nom_de_branche
-```
-
-## 🚀 Pousser ta branche pour la première fois
-
-``` bash
-git push --set-upstream origin nom_de_branche
-```
-
-## 📤 Pour les prochains push/pull
-
-``` bash
-git push
-git pull
-```
-
-Git saura vers quelle branche distante pousser ou tirer.
-
-## 🌳 Voir les branches existantes
-
-``` bash
-git branch
-```
-Affiche les branches locales. L’étoile * indique celle sur laquelle tu es actuellement.
-
-Pour voir aussi les branches distantes :
-``` bash
-git branch -r
-```
-
-## 🧹 Supprimer une branche locale
-``` bash
-git branch -d nom_de_branch
-```
-
-## 🔀 Fusionner une branche (merge)
-
-Une fois que tu as terminé ton travail dans une branche (par exemple feature/truc), tu peux fusionner cette branche dans main :
-
-1. Revenir sur la branche cible (main, le plus souvent) :
-``` bash
-git checkout main
-```
-2. Fusionner la branche de travail :
-``` bash
-git merge feature/truc
-```
-Cela applique les changements de feature/truc dans main.
-
-4. Pousser les changements :
-``` bash
-git push origin main
-```
-👉 Si un conflit apparaît, Git t'indiquera les fichiers à résoudre. Tu devras modifier les fichiers conflictuels à la main, puis faire :
-``` bash
-git add <fichiers_modifiés>
-git commit
-```
-
-## 🔃 Récupérer les mises à jour (sans merge automatique)
-``` bash
-git fetch origin
-```
-Cette commande récupère toutes les mises à jour distantes, sans les fusionner dans tes branches locales.
-
-C’est utile si tu veux :
-
-- Voir ce qui a changé sur le dépôt distant,
-- Comparer les branches locales/distant,
-- Fusionner manuellement après inspection.
+```bash
+python nom_du_fichier.py
