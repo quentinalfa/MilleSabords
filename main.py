@@ -6,7 +6,7 @@ def tri_listes_scores_et_joueurs_par_score(scores: List[int], joueurs: List[str]
 
   for index_non_tri in range(len(scores)):
     for index_tri in range(len(scores_tri)):
-      if scores[index_non_tri] < scores_tri[index_tri]:
+      if scores[index_non_tri] > scores_tri[index_tri]:
         scores_tri.insert(index_tri, scores[index_non_tri])
         joueurs_tri.insert(index_tri, joueurs[index_non_tri])
         break
@@ -39,9 +39,10 @@ def jouer():
     print()
 
   scores_tri, joueurs_tri = tri_listes_scores_et_joueurs_par_score(scores, players)
-  
-  for i in range(len(scores_tri)):
-    print()
+
+  print("1 ère place :", joueurs_tri[0], "(score :",scores[0],")")
+  for i in range(1, len(scores_tri)):
+    print(i+1,"ème place :", joueurs_tri[i], "(score :",scores[i],")")
 
 
 
