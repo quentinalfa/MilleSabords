@@ -42,7 +42,7 @@ def jouer():
 
   print("1 ère place :", joueurs_tri[0], "(score :",scores[0],")")
   for i in range(1, len(scores_tri)):
-    print(i+1,"ème place :", joueurs_tri[i], "(score :",scores[i],")")
+    print(i+1,"ème place :", joueurs_tri[i], "(score :",scores_tri[i],")")
 
 
 
