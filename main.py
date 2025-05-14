@@ -38,7 +38,10 @@ def jouer():
     current_player_index = (current_player_index +1) %nb_players
     print()
 
-  print("scores")
+  scores_tri, joueurs_tri = tri_listes_scores_et_joueurs_par_score(scores, players)
+  
+  for i in range(len(scores_tri)):
+    print()
 
 
 
