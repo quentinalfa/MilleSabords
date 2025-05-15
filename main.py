@@ -40,14 +40,23 @@ def jouer():
 
   scores_tri, joueurs_tri = tri_listes_scores_et_joueurs_par_score(scores, players)
 
-  print("1 ère place :", joueurs_tri[0], "(score :",scores[0],")")
+  print("1 ère place :", joueurs_tri[0], "(score :",scores_tri[0],")")
   for i in range(1, len(scores_tri)):
     print(i+1,"ème place :", joueurs_tri[i], "(score :",scores_tri[i],")")
 
 
+def main () :
+  envie_de_jouer = True
 
+  while envie_de_jouer :
+    jouer()
+    print()
+    rejouer = input('vous voulez rejouez ? (y/n) ')
+    print()
+    if rejouer == "n" :
+      envie_de_jouer = False
+      
+  
 
-
-jouer ()
-# print (tri_listes_scores_et_joueurs_par_score([3, 4, 1, 2], ["a", "b", "c", "d"]))
-
+if __name__ == '__main__':
+  main()
