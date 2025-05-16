@@ -11,7 +11,6 @@ def main () :
     if rejouer == "n" :
       envie_de_jouer = False
       
-  
-
 if __name__ == '__main__':
   main()
+
