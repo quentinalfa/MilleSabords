@@ -1,4 +1,5 @@
 from utils import tri_listes_scores_et_joueurs_par_score as tri
+from write_file import save_scores 
 
 def jouer():
   goal = 6000
@@ -27,3 +28,4 @@ def jouer():
   for i in range(1, len(scores_tri)):
     print(i+1,"ème place :", joueurs_tri[i], "(score :",scores_tri[i],")")
 
+  save_scores(scores_tri, joueurs_tri)
