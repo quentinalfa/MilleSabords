@@ -4,11 +4,17 @@
 - ✅ Associer un nom de joueur à un score
 - ✅ Gérer les tours de jeu automatiquement
 - ✅ Détecter la fin de partie quand un joueur atteint 6000 points
+- ✅ Gérer plusieurs parties.
+- ✅ Architechture modulaire (plusieurs fichiers)
+- ✅ Enregistrer les scores dans un fichier.
 
 # ✨ Améliorations possibles
 
-- [ ] Afficher le classement final dans la console (il est actuellement calculé mais pas affiché).
 - [ ] Ajouter une détection de gagnant clair.
-- [ ] Gérer plusieurs parties.
 - [ ] Ajouter un système de bonus ou de pénalité.
-- [ ] Enregistrer les scores dans un fichier.
+- [ ] Gerer les points negatifs
+- [ ] Gerer l'ile de la mort
+- [ ] Faire un meilleur affichage console
+- [ ] Creer des Objets Joueurs
+- [ ] Enregistrer Score et Partie dans fichier json
+- [ ] Reprendre une partie arretée
