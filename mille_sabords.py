@@ -17,15 +17,15 @@ def jouer():
   print()
 
   while scores[current_player_index] < goal :
-    scores[current_player_index] += int(input(players[current_player_index] + " à gagner combien de points ? "))
-    print(players[current_player_index],"à",scores[current_player_index],"de scores")
+    scores[current_player_index] += int(input(players[current_player_index] + " a gagné combien de points ? "))
+    print(players[current_player_index],"a",scores[current_player_index],"de scores")
     current_player_index = (current_player_index +1) %nb_players
     print()
 
   scores_tri, joueurs_tri = tri(scores, players)
 
   print("1 ère place :", joueurs_tri[0], "(score :",scores_tri[0],")")
-  for i in range(1, len(scores_tri)):
+  for i in range(1, nb_players):
     print(i+1,"ème place :", joueurs_tri[i], "(score :",scores_tri[i],")")
 
   save_scores(scores_tri, joueurs_tri)
